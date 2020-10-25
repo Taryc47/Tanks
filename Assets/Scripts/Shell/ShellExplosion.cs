@@ -33,7 +33,7 @@ public class ShellExplosion : MonoBehaviour
 			
 			TankHealth targetHealth = targetRidigbody.GetComponent<TankHealth>();
 			
-			if(targetHealth)
+			if(!targetHealth)
 				continue;
 			
 			float damage = CalculateDamage(targetRidigbody.position);
